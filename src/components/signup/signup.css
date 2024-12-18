@@ -1,0 +1,57 @@
+/* Basic styling for the Signup component */
+.signup-form {
+    background-color: white; /* Make sure the form has a solid background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    position: relative; /* Needed for z-index to work */
+    z-index: 10; /* Ensure the form appears above other content like the map */
+    width: 100%; /* Full width of the container, adjust as needed */
+    max-width: 500px; /* Limit the width */
+    margin: 0 auto; /* Center it horizontally */
+    top: 30px; /* Add some top margin to push it below the header */
+  }
+  
+  .signup-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .signup-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Space between form elements */
+  }
+  
+  .signup-form input,
+  .signup-form button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  .signup-form input:focus,
+  .signup-form button:focus {
+    outline: none;
+    border-color: #4a90e2; /* Blue focus border */
+  }
+  
+  .signup-form button {
+    background-color: #4a90e2; /* Button color */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .signup-form button:hover {
+    background-color: #357ab7; /* Darker button color on hover */
+  }
+  
+  .signup-form .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -8px;
+  }
+  
