@@ -31,10 +31,6 @@ function App() {
     {/* Map Section */}
     <MapContainer />
 
-    {/* Sign-Up Form */}
-    <section className="relative z-10 p-4 mt-8">
-      <Signup />  {/* Adding the signup component here */}
-    </section>
 
     {/* Map Overlay and Other Content */}
     <MapOverlay>
@@ -50,11 +46,16 @@ function App() {
                 <OpportunityCard key={opportunity.id} opportunity={opportunity} />
               ))}
             </div>
-
             <ReviewsSection />
+            
+            {/* Sign-Up Form */}
+
           </div>
         </div>
       </main>
+      <section className="relative z-10 p-4 mt-8">
+              <Signup />  {/* Adding the signup component here */}
+            </section>
     </MapOverlay>
   </MainLayout>
   );
